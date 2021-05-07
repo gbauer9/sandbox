@@ -1,0 +1,50 @@
+html,
+body {
+    min-height: 100%;
+    overflow-y: scroll;
+    font-family: 'Roboto Mono', monospace;
+    padding: 3em 2em;
+    font-size: 18px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    color: rgb(175, 175, 175);
+}
+
+h1,
+h2 {
+    font-weight: 200;
+    margin: 0.4em 0;
+}
+h1 {
+    font-size: 3.5em;
+}
+h2 {
+    color: #888;
+    font-size: 2em;
+}
+
+.row {
+    margin-top: auto;
+    display: flex;
+}
+
+.col {
+    flex: 50%;
+}
+
+.hidden {
+    display: none;
+}
+
+.txt-typewriter > .wrap {
+    border-right: 0.08em solid #666;
+    animation: blinkTextCursor 800ms steps(29,end) infinite;
+}
+
+@keyframes blinkTextCursor {
+
+    from {border-right-color: rgb(255, 255, 255);}
+  
+    to {border-right-color: transparent;}
+  
+}
