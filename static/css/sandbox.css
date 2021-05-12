@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
     min-height: 100%;
     overflow-y: scroll;
     font-family: 'Roboto Mono', monospace;
@@ -10,8 +9,11 @@ body {
     color: rgb(175, 175, 175);
 }
 
-h1,
-h2 {
+body {
+    max-width: 42em;
+}
+
+h1, h2 {
     font-weight: 200;
     margin: 0.4em 0;
 }
@@ -23,6 +25,11 @@ h2 {
     font-size: 2em;
 }
 
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
 .row {
     margin-top: auto;
     display: flex;
@@ -32,11 +39,20 @@ h2 {
     flex: 50%;
 }
 
-.hidden {
-    display: none;
+.replace {
+    display:none;
 }
 
-.txt-typewriter > .wrap {
+.hoverable:hover span.init {
+    display:none;
+}
+
+.hoverable:hover span.replace {
+    display:inline;
+    color: rgb(0, 255, 0)
+}
+
+.txt-typewriter {
     border-right: 0.08em solid #666;
     animation: blinkTextCursor 800ms steps(29,end) infinite;
 }
